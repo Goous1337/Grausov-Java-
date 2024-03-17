@@ -8,7 +8,7 @@ public class Comparison {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите первое число: ");
-        int firstNumber = scanner.nextInt();
+        int firstNumber = scanner.nextInt() ;
         System.out.println("Введите второе число: ");
         int secondNumber = scanner.nextInt();
         scanner.close();

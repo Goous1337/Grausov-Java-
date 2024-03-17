@@ -7,7 +7,7 @@ public class Equals {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите первое слово: ");
+        System.out.println("Введите первое слово: " );
         String firstWord  = scanner.next();
         System.out.println("Введите второе слово: ");
         String secondWord = scanner.next();
