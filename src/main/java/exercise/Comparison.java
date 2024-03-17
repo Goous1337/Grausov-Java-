@@ -3,32 +3,29 @@ package exercise;
 import java.util.Scanner;
 
 public class Comparison {
+
     public static void main (String [] args){
 
-        Scanner s =  new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Введите первое число: ");
-        int A = s.nextInt();
+        int firstNumber = scanner.nextInt();
         System.out.println("Введите второе число: ");
-        int B = s.nextInt();
+        int secondNumber = scanner.nextInt();
+        scanner.close();
 
-        System.out.println(A+B);
-        System.out.println(A-B);
-        System.out.println(B/A);
-        System.out.println(A*B);
+        System.out.println(firstNumber+secondNumber +": Сложение");
+        System.out.println(firstNumber-secondNumber +": Вычитание");
+        System.out.println(firstNumber/secondNumber +": Деление");
+        System.out.println(firstNumber*secondNumber +": Умножение");
 
-        String a = "JAVA";
-        String b = "java";
-
-        if (A>B){
-            System.out.println("Число А больше числа Б");
+        if (firstNumber>secondNumber){
+            System.out.println("Первое число больше второго числа");
+        }else if (firstNumber<secondNumber){
+            System.out.println("Первое число меньше второго числа");
+        }else if (firstNumber == secondNumber){
+            System.out.println("Числа равны");
         }else{
-            System.out.println("Число А меньше числа Б ");
-        }
-
-        if (a.equalsIgnoreCase(b)){
-            System.out.println("Строки идентичны");
-        }else{
-            System.out.println("Строки неидентичны");
+            System.out.println("Числа не равны");
         }
     }
 }

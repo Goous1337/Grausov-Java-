@@ -6,9 +6,9 @@ public class Array {
 
         int [] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int a;
-        for(int i=0; i<=array.length; i++){
-            if ((array[i] % 2) == 0) {
-                a = array[i];
+        for (int j : array) {
+            if ((j % 2) == 0) {
+                a = j;
                 System.out.println(a);
             }
         }
